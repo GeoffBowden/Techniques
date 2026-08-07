@@ -27,6 +27,18 @@
           <AssociatedConnUserName />
           <FullPath>FizzBuzz.sql</FullPath>
         </FileNode>
+        <FileNode Name="Indexes.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-9HTJ6DS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-9HTJ6DS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Indexes.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Pivot.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-9HTJ6DS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-9HTJ6DS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Pivot.sql</FullPath>
+        </FileNode>
         <FileNode Name="Stuff.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-9HTJ6DS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-9HTJ6DS</AssociatedConnSrvName>
