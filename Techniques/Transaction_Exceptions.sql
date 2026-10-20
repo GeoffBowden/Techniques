@@ -10,7 +10,11 @@ GO
 --    [AdventureWorks2025].[Production].[ProductInventory]
 --Where
 --    [LocationID] in ( 45, 50, 60 )
-
+Select * from [Production].[Location]
+Insert into [Production].[Location] 
+    ( LocationID, Name, CostRate, Availability, ModifiedDate )
+values 
+    ( 70, 'Final Assembly', 12.25,	120.00, GetDate())
 -- BEGIN TRAN
 -- BEGIN TRANSACTION 
 BEGIN TRANSACTION updateLocationID
