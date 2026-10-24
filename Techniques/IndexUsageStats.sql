@@ -53,6 +53,21 @@ SELECT
 
     ISNULL(us.user_seeks, 0) AS UserSeeks,       -- Number of index seeks
     ISNULL(us.user_scans, 0) AS UserScans,       -- Number of index scans
+    /*
+        A key lookup occurs when SQL Server uses a nonclustered index to find the rows you're interested in, but that index doesn't contain all the columns needed to satisfy the query.
+
+        SQL Server then has to perform a second step:
+
+        Use the nonclustered index to find matching rows.
+        Use the key value stored in the index to look up the remaining columns in the clustered index (or heap).
+
+        This lookup is expensive and can be corrected by unigin a convered index in the form of:
+                CREATE INDEX IX_Person_LastName
+                ON Person(LastName)
+                INCLUDE (FirstName, EmailAddress);
+        Required non-indexed columns can be included in the index and the lookup will disappear, 
+        very useful for very big queries
+    */
     ISNULL(us.user_lookups, 0) AS UserLookups,   -- Number of bookmark/key lookups
     ISNULL(us.user_updates, 0) AS UserUpdates,   -- Number of updates affecting index
 
